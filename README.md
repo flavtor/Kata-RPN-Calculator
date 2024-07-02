@@ -1,6 +1,11 @@
 # RPN Calculator
 
 Ce projet implémente un calculateur RPN (Reverse Polish Notation) en C.
+en se limitant aux opérateurs suivants :
+- +
+- -
+- *
+
 
 ## Structure du projet
 
