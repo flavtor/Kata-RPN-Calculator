@@ -17,12 +17,13 @@ Pour compiler le programme principal :
 ```sh
 make main
 ./main
-
+```
 Pour compiler et exécuter les tests :
-
+```sh
 make tests
 ./tests
-
+```
 Pour générer le rapport de couverture de code :
-
+```sh
 gcov rpn_calculator.c
+```
