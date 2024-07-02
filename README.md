@@ -15,6 +15,22 @@ en se limitant aux opérateurs suivants :
 - `tests.c` : Contient les tests unitaires
 - `Makefile` : Pour compiler le projet et exécuter les tests avec la couverture de code
 
+## Prérequis
+
+Avant de commencer, assurez-vous d'avoir les outils suivants installés :
+
+- **GCC** : Le compilateur C pour compiler le code.
+- **Make** : Utilisé pour automatiser le processus de compilation et de nettoyage.
+
+### Installation des prérequis
+
+Pour installer GCC et Make sur Linux (Ubuntu ou Debian) :
+
+```bash
+sudo apt update
+sudo apt install gcc make
+```
+
 ## Compilation et exécution
 
 Pour compiler le programme principal :
