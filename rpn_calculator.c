@@ -27,7 +27,7 @@ int pop() {
     }
 }
 
-void evaluate_rpn(const char* expression) {
+int evaluate_rpn(const char* expression) {
     char token[10];
     int i = 0, j = 0;
     while (expression[i] != '\0') {
@@ -52,10 +52,12 @@ void evaluate_rpn(const char* expression) {
                 case '*': push(a * b); break;
                 default:
                     fprintf(stderr, "Unknown operator: %c\n", expression[i]);
-                    exit(EXIT_FAILURE);
+                    return -1;
             }
             i++;
         }
     }
-    printf("Result: %d\n", pop());
+    int result = pop();
+    printf("Result: %d\n", result);
+    return result;
 }
